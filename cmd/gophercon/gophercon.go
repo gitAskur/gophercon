@@ -12,6 +12,7 @@ func main() {
 
     r := routing.BaseRouter()
 
-    http.ListenAndServe(":8000", r)
+    log.Fatal(http.ListenAndServe(":8000", r))
+
 }
 
